@@ -21,8 +21,6 @@ const Signup = (props) => {
                     <p>Already have an account? <span>Sign in</span></p>
                 </div>
                
-
-
                
             </form>
            
