@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Forms = () => {
+const Forms = (props) => {
     return (
         <div className='forf h-screen w-full'>
             <div className='flex text-def pt-10 pl-10'>
