@@ -1,7 +1,9 @@
 import React from 'react'
+import Forms from '../../pages/Forms'
 
 const Signup = () => {
     return (
+        <Forms>
         <div>
             <p className=' text-def'> Sign in to KM</p>
             <p>Best Chassis repairing company</p>
@@ -25,6 +27,7 @@ const Signup = () => {
             </form>
            
         </div>
+        </Forms>
     )
 }
 
