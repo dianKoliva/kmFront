@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.forf{
+    background-color: #F8F6F7;
+}
+.k{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
