@@ -4,7 +4,7 @@ import Forms from '../../pages/Forms'
 const Signup = (props) => {
     return (
         <Forms>
-        <div>
+        <div className='  bg-white w-1/2 h-1/2' >
             <p className=' text-def'> Sign in to KM</p>
             <p>Best Chassis repairing company</p>
 
