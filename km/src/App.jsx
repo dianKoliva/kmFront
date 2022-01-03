@@ -3,14 +3,14 @@ import logo from './logo.svg'
 import './App.css'
 import "./styles/index.css"
 
-import Dashboard from './layouts/Dashboard'
+import RegisterEmp from './components/employees/RegisterEmp'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-    <Dashboard></Dashboard>
+    <RegisterEmp></RegisterEmp>
     </div>
   )
 }

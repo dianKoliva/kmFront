@@ -8,7 +8,7 @@ const Dashboard = (props) => {
            <div className='nav w-2/12 '>
            <LefBar></LefBar>
            </div>
-           <div className='bg-white'>
+           <div className='bg-white w-10/12' >
                {props.children}
                </div> 
         </div>

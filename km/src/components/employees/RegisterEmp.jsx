@@ -5,7 +5,7 @@ const RegisterEmp = () => {
     return (
            <Dashboard>
 
-<div>
+<div className=' bg-midnight cnt2  w-2/5 mt-72  '>
     <h1>Register new KM employee</h1>
   <form action="
   ">
@@ -26,6 +26,11 @@ const RegisterEmp = () => {
         <input type="checkbox" name="" id="" />
         Agree to terms and conditions 
     </div>
+
+<div>
+    <button>Save</button>
+</div>
+
 
   </form>
    
