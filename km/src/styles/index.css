@@ -13,3 +13,9 @@
 .k{
     font-family: 'Big Shoulders Stencil Text', cursive;
 }
+.cnt{
+    margin: 4% 37%;
+}
+.line{
+    border-bottom: rgb(0, 0, 0) 1.5px solid;
+}

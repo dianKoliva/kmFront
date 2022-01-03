@@ -7,7 +7,7 @@ const Forms = (props) => {
             <h1 className='k text-4xl font-bold '>K</h1>
          <p className=' font-bold mt-5 pl-1 space-x-0 text-sm'>oliva motors</p>
             </div>
-        <div>
+        <div className='w-96 cnt'>
         {props.children}
         </div>
         </div>
