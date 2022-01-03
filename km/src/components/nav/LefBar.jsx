@@ -4,12 +4,12 @@ const LefBar = () => {
     return (
         <div className='  bg-side h-screen lg:pl-10 pt-0 text-sm '>
            
-<div className='flex pt-10'> <h1 className='font-bold text-4xl '>K</h1>
-            <p className='mt-4 '>oliva motors</p>
+<div className='flex pt-10  text-def'> <h1 className=' k font-bold text-3xl  '>K</h1>
+            <p className='mt-4 pl-1 font-bold'>oliva motors</p>
 
 </div>
 
-<div className='mt-20 '>
+<div className='mt-16 '>
     <ul>
         <li>Home</li>
         <li className='pt-6'>Attendance</li>
