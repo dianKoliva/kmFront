@@ -14,8 +14,8 @@ const ListEmp = () => {
               <div >
                   <div className='flex mt-4'>
                   <p>Abakozi</p>
-                  <p className='ml-2'>Abatagikora</p>
-                  <p className='ml-2'>Abatarishyurwa</p>
+                  <p className='ml-6'>Abatagikora</p>
+                  <p className='ml-6'>Abatarishyurwa</p>
                   </div>
              
 
