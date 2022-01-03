@@ -4,13 +4,14 @@ import './App.css'
 import "./styles/index.css"
 
 import Attendance from './components/employees/Attendance'
+import ViewEmp from './components/employees/ViewEmp'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-    <Attendance></Attendance>
+    <ViewEmp></ViewEmp>
     </div>
   )
 }
