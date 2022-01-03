@@ -1,5 +1,5 @@
 import React from 'react'
-import Forms from '../../pages/Forms'
+import Forms from '../../layouts/Forms'
 
 const Login = (props) => {
     return (
