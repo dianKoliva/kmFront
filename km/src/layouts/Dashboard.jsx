@@ -1,9 +1,16 @@
 import React from 'react'
+import LefBar from '../components/nav/LefBar'
 
-const Dashboard = () => {
+
+const Dashboard = (props) => {
     return (
-        <div>
-            
+        <div className='flex w-full '>
+           <div className='nav w-2/12 '>
+           <LefBar></LefBar>
+           </div>
+           <div>
+               {props.children}
+               </div> 
         </div>
     )
 }
