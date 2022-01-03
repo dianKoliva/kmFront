@@ -3,14 +3,14 @@ import logo from './logo.svg'
 import './App.css'
 import "./styles/index.css"
 
-import Signup from './components/forms/Signup'
+import Login from './components/forms/Login'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-    <Signup></Signup>
+    <Login></Login>
     </div>
   )
 }

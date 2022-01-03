@@ -13,10 +13,7 @@ const Login = (props) => {
 
             <form action="" className='text-sm'>
                 <div className='inputs'>
-                <div>
-                <p>User name</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
-                </div>
+              
                 <div className='mt-4'>
                 <p>Email</p>
                 <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
@@ -24,6 +21,11 @@ const Login = (props) => {
                 <div className='mt-4'>
                 <p>Password</p>
                 <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                </div> 
+                <div className='mt-6 flex text-sm'>
+                    <input type="checkbox" className='mt-1' name="" id="" />
+                <p className='ml-2'>Remember me</p>
+               
                 </div> 
                 </div>
 
@@ -40,4 +42,4 @@ const Login = (props) => {
     )
 }
 
-export default Signup
+export default Login
