@@ -24,7 +24,7 @@ const ListEmp = () => {
           <table className='w-full mt-4' cellSpacing="0">
 <thead className='py-2'>
 
-<th width="100">  Employee</th>
+<th className=' text-left' width="100">  Employee</th>
 
 <th width="150">Phone number</th>
 <th width="200">Created at</th>
@@ -33,25 +33,25 @@ const ListEmp = () => {
 <tbody>
 <tr className='py-2'>
 
-<td> Diane Pretty</td>
+<td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
 <td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td> Diane Pretty</td>
+<td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
 <td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td> Diane Pretty</td>
+<td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
 <td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td> Diane Pretty</td>
+<td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
 <td><i class="fa text-def fa-window-close"></i></td>
