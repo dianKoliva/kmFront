@@ -36,25 +36,25 @@ const ListEmp = () => {
 <td> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td>297</td>
+<td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td>2</td>
-<td>AU</td>
-<td>Australia</td>
-<td>61</td>
+<td> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td>3</td>
-<td>AT</td>
-<td>Austria</td>
-<td>43</td>
+<td> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 <tr>
-<td>4</td>
-<td>AZ</td>
-<td>Azerbaijan</td>
-<td>994</td>
+<td> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i class="fa text-def fa-window-close"></i></td>
 </tr>
 
 
