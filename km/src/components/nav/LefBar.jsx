@@ -1,5 +1,4 @@
 import React from 'react'
-import AiFillHome from "react-icons/ai";
 
 const LefBar = () => {
     return (
@@ -13,7 +12,7 @@ const LefBar = () => {
 <div className='mt-16 '>
     <ul>
         <li>Home</li>
-        <li className='pt-6'> <AiFillHome></AiFillHome> Attendance</li>
+        <li className='pt-6'>  Attendance</li>
         <li className='pt-6'>Register</li>
         <li className='pt-6'>Register</li>
         <li className='pt-6'>Register</li>

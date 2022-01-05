@@ -12,16 +12,16 @@ const ListEmp = () => {
 
               <div >
                   <div className='flex mt-4'>
-                  <p>Abakozi</p>
-                  <p className='ml-6'>Abatagikora</p>
-                  <p className='ml-6'>Abatarishyurwa</p>
+                  <p className=' cursor-pointer'>Abakozi</p>
+                  <p className=' cursor-pointer ml-6'>Abatagikora</p>
+                  <p className=' cursor-pointer ml-6'>Abatarishyurwa</p>
                   </div>
 
                   <div className='border-b-2 border-solid  border-side'></div>
               </div>
           </div>
           <div>
-          <table className='w-full mt-4' cellspacing="0">
+          <table className='w-full mt-4' cellSpacing="0">
 <thead className='py-2'>
 <th width="100">Employee</th>
 <th width="150">Phone number</th>
