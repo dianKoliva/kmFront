@@ -32,8 +32,8 @@ const Login = (props) => {
 
                 <div className='mt-6 text-center'>
                     <button className=' bg-def px-8 rounded-md  text-white py-2'> Let's go</button>
-                    <Link to="/">
-                    <p className='mt-4   text-xs'>Already have an account? <span className='text-def underline font-bold cursor-pointer'>Sign in</span></p>
+                    <Link to="/signup">
+                    <p className='mt-4   text-xs'>Have no account yet? <span className='text-def underline font-bold cursor-pointer'>Sign up</span></p>
                     </Link>
                 </div>
                
