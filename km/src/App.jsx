@@ -10,6 +10,7 @@ import ViewEmp from './components/employees/ViewEmp';
 import Abatarishyurwa  from "./components/employees/Abatarishyurwa";
 import Abatagikora from "./components/employees/Abatagikora";
 import Abaje from "./components/employees/Abaje"
+import Register from  "./components/employees/RegisterEmp"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path="/employees/abatarishyurwa" exact component={ Abatarishyurwa } />
     <Route path="/employees/abatagikora" exact component={ Abatagikora } />
     <Route path="/employees/abaje" exact component={ Abaje } />
+    <Route path="/employees/new" exact component={ Register } />
 
     </Switch>
     </Router>
