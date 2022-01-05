@@ -3,7 +3,6 @@ import logo from './logo.svg'
 import './App.css'
 import "./styles/index.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Attendance from './components/employees/Abaje'
 import Signup from "./components/forms/Signup"
 import Login from './components/forms/Login';
 import ListEmp from "./components/employees/ListEmp";
