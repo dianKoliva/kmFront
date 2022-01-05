@@ -13,17 +13,17 @@ const RegisterEmp = () => {
     <p>Amazina yombi</p>
     <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
- <div className='mt-2'>
+ <div className='mt-3'>
     <p>Tel no</p>
     <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
- <div className='mt-2'>
+ <div className='mt-3'>
     <p>Umushahara</p>
     <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
 
  
-    <div className='mt-2 flex'>
+    <div className='mt-3 flex'>
         <input type="checkbox" className='mt-1' name="" id="" />
         <p className='ml-1'>  Agree to terms and conditions </p>
        
