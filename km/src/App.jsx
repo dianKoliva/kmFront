@@ -4,10 +4,10 @@ import './App.css'
 import "./styles/index.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Attendance from './components/employees/Attendance'
-import ViewEmp from './components/employees/ViewEmp'
 import Signup from "./components/forms/Signup"
 import Login from './components/forms/Login';
 import ListEmp from "./components/employees/ListEmp";
+import ViewEmp from './components/employees/ViewEmp';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <Route path="/" exact component={Login} />
     <Route path="/signup" exact component={ Signup } />
     <Route path="/employees" exact component={ ListEmp } />
-    <Route path="/employees/details" exact component={ ListEmp } />
+    <Route path="/employees/details" exact component={ ViewEmp } />
 
 
     </Switch>
