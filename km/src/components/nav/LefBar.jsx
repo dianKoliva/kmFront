@@ -12,9 +12,15 @@ const LefBar = () => {
 
 <div className='mt-16 '>
     <ul>
-        <li>Home</li>
-        <li className='pt-6'>  Abakozi</li>
-        <li className='pt-6'>Imodoka</li>
+        <li >
+        <i className="fa cursor-pointer text-def fa-home mr-2"></i>
+            Home</li>
+        <li className='pt-6'> 
+        <i className="fa cursor-pointer text-def fa-users mr-2"></i>
+         Abakozi</li>
+        <li className='pt-6'>
+        <i className="fa cursor-pointer text-def fa-car mr-2"></i>
+            Imodoka</li>
         <li className='pt-6'>Finances</li>
         <li className='pt-6'>Register</li>
     </ul>
