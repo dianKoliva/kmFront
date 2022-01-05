@@ -8,7 +8,6 @@ const ListEmp = () => {
               <div className="flex text-sm">
                 <input type="search" spellCheck="false"  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
                 <button className='bg-def px-4 absolute right-0 mr-8 py-1 text-white rounded-sm'> + Add employee</button>
-
               </div>
 
               <div >
@@ -17,7 +16,6 @@ const ListEmp = () => {
                   <p className='ml-6'>Abatagikora</p>
                   <p className='ml-6'>Abatarishyurwa</p>
                   </div>
-             
 
                   <div className='border-b-2 border-solid  border-side'></div>
               </div>
