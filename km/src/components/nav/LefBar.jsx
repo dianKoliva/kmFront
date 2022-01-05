@@ -13,9 +13,9 @@ const LefBar = () => {
 <div className='mt-16 '>
     <ul>
         <li>Home</li>
-        <li className='pt-6'>  Attendance</li>
-        <li className='pt-6'>Register</li>
-        <li className='pt-6'>Register</li>
+        <li className='pt-6'>  Abakozi</li>
+        <li className='pt-6'>Imodoka</li>
+        <li className='pt-6'>Finances</li>
         <li className='pt-6'>Register</li>
     </ul>
 </div>
