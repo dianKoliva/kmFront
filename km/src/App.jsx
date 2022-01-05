@@ -29,7 +29,7 @@ function App() {
     <Route path="/employees/abatagikora" exact component={ Abatagikora } />
     <Route path="/employees/abaje" exact component={ Abaje } />
     <Route path="/employees/new" exact component={ Register } />
-
+    
     </Switch>
     </Router>
     </div>
