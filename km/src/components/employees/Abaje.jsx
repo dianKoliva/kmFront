@@ -1,54 +1,73 @@
 import React from 'react'
 import Dashboard from '../../layouts/Dashboard'
-const Attendance = () => {
+import 'animate.css';
+const ListEmp = () => {
     return (
     <Dashboard>
         <div className='pl-8 pr-8 pt-6 text-sm'>
         <div>
-              <div className="flex text-sm">
-                  <p className='mb-4'>Employees Attendance</p>
-                <input type="search" spellCheck="false"  className=' absolute right-0 mr-8 focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
+        <div className="flex text-sm">
+                <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
+                <div className='absolute right-0 mr-8 flex '>
+                    <div className='border-2 mr-10 rounded-md   border-def border-solid'>
+                    <i className="fa px-2  text-lg cursor-pointer text-def fa-download"></i>
+                    </div>
+                <button className='  bg-def px-4  h-8 text-white rounded-md'> + Add employee</button>
+                </div>
                 
-
               </div>
 
-              <div >
-                
+
+              <div className='' >
+                  <div className='flex mt-6 mb-2'>
+                  <p className=' cursor-pointer hover:underline '>Abakozi</p>
+                  <p className=' cursor-pointer ml-6 hover:underline '>Abatagikora</p>
+                  <p className=' cursor-pointer ml-6 hover:underline'>Abatarishyurwa</p>
+                  </div>
 
                   <div className='border-b-2 border-solid  border-side'></div>
               </div>
           </div>
           <div>
-          <table className='w-full mt-4' cellspacing="0">
+          <table className='w-full mt-4' cellSpacing="0">
 <thead className='py-2'>
-<th width="100">Employee</th>
-<th width="150">Date</th>
-<th width="200">Attended</th>
 
+<th className=' text-left' width="100">  Employee</th>
+
+<th width="150">Phone number</th>
+<th width="200">Created at</th>
+<th width="150">Diactivate</th>
+<th width="2"></th>
 </thead>
 <tbody>
 <tr className='py-2'>
-<td>1</td>
-<td>AW</td>
-<td>Aruba</td>
 
+<td className=' text-left'> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
-<td>2</td>
-<td>AU</td>
-<td>Australia</td>
-
+<td className=' text-left'> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
-<td>3</td>
-<td>AT</td>
-<td>Austria</td>
-
+<td className=' text-left'> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
-<td>4</td>
-<td>AZ</td>
-<td>Azerbaijan</td>
+<td className=' text-left'> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 
 
@@ -61,4 +80,4 @@ const Attendance = () => {
     ) 
 }
 
-export default Attendance
+export default ListEmp
