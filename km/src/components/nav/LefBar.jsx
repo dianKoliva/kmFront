@@ -11,10 +11,9 @@ const LefBar = () => {
 </div>
 
 <div className='mt-16 '>
-    <ul>
-        <li >
+   
         <i className="fa cursor-pointer text-def fa-home mr-3"></i>
-            Home</li>
+            Home
         <li className='pt-8'> 
         <i className="fa cursor-pointer text-def fa-users mr-3"></i>
          Abakozi</li>
@@ -28,7 +27,7 @@ const LefBar = () => {
         <li className='pt-8'>
         <i className="fa cursor-pointer text-def fa-cogs mr-3"></i>
             Settings</li>
-    </ul>
+  
 </div>
 
 
