@@ -34,8 +34,9 @@ const ListEmp = () => {
 
 <th className=' text-left' width="100">  Employee</th>
 
-<th width="150">De-activation date</th>
+
 <th width="200">Days worked</th>
+<th width="150">De-activation date</th>
 <th width="150">Activate</th>
 
 </thead>
@@ -43,30 +44,31 @@ const ListEmp = () => {
 <tr className='py-2'>
 
 <td className=' text-left'> Ntakirutimana Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-save"></i></td>
-</tr>
-<tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>02/04/2020</td>
 <td>365</td>
+<td>12/03/2021</td>
+
 <td><i className="fa cursor-pointer text-def fa-save"></i></td>
-
 </tr>
 <tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
+<td className=' text-left'> Ntakirutimana Pretty</td>
+<td>365</td>
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
 
+<td><i className="fa cursor-pointer text-def fa-save"></i></td>
 </tr>
 <tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
+<td className=' text-left'> Ntakirutimana Pretty</td>
+<td>365</td>
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
 
+<td><i className="fa cursor-pointer text-def fa-save"></i></td>
+</tr>
+<tr>
+<td className=' text-left'> Ntakirutimana Pretty</td>
+<td>365</td>
+<td>12/03/2021</td>
+
+<td><i className="fa cursor-pointer text-def fa-save"></i></td>
 </tr>
 
 
