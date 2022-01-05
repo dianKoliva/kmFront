@@ -2,9 +2,9 @@ import React from 'react'
 
 const LefBar = () => {
     return (
-        <div className='  bg-side h-screen  pt-0 text-sm '>
+        <div className='  bg-side h-screen   pt-0 text-sm '>
 
-<div className='flex pt-10  text-def'> <h1 className=' k font-bold text-3xl  '>K</h1>
+<div className=' pl-14 flex pt-10  text-def'> <h1 className=' k font-bold text-3xl  '>K</h1>
 
   <p className='mt-4 pl-1 font-bold'>oliva motors</p>
 
@@ -37,10 +37,14 @@ const LefBar = () => {
        </p>
        
             </div>
-            
-        <li className='pt-8'>
-        <i className="fa cursor-pointer text-def fa-cogs mr-3"></i>
-            Settings</li>
+            <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
+            <p className='py-1'>
+       <i className="fa pl-14 cursor-pointer text-def fa-cogs mr-3"></i>
+            Settings
+       </p>
+            </div>
+       
+       
   
 </div>
 
