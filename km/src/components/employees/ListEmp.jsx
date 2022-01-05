@@ -38,29 +38,29 @@ const ListEmp = () => {
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i class="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i class="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i class="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i class="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 
 
