@@ -13,12 +13,12 @@ const LefBar = () => {
 <div className='mt-16 '>
    
    <div className='  hover:border-def  border-side border-l-3 borer-solid '>
-   <i className="fa cursor-pointer text-def fa-home mr-3"></i>
+   <i className="fa pl-14 cursor-pointer text-def fa-home mr-3"></i>
             Home
    </div>
        
         <li className='pt-8'> 
-        <i className="fa cursor-pointer text-def fa-users mr-3"></i>
+        <i className="fa  cursor-pointer text-def fa-users mr-3"></i>
          Abakozi</li>
         <li className='pt-8'>
         <i className="fa cursor-pointer text-def fa-car mr-3"></i>
