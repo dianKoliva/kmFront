@@ -30,12 +30,15 @@
 
 table th, table td{
 text-align: center;
-padding-top: 6px;
-padding-bottom: 6px;
 padding-left: 6px;
+padding-right:6px ;
 }
 tbody tr:nth-child(even) {
 background: #f5f3f4;
+}
+table td{
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 table th{
 /* font-weight: 300; */
