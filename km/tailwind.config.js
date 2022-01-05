@@ -21,6 +21,15 @@ module.exports = {
       'bermuda': '#78dcca',
       'box':"#F8F6F7"
     },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '1.3px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+    },
     extend: {},
   },
   variants: {

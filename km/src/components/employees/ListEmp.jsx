@@ -10,8 +10,8 @@ const ListEmp = () => {
                 <button className='bg-def px-4 absolute right-0 mr-8 py-1 text-white rounded-sm'> + Add employee</button>
               </div>
 
-              <div >
-                  <div className='flex mt-4'>
+              <div className='' >
+                  <div className='flex mt-6 mb-2'>
                   <p className=' cursor-pointer'>Abakozi</p>
                   <p className=' cursor-pointer ml-6'>Abatagikora</p>
                   <p className=' cursor-pointer ml-6'>Abatarishyurwa</p>
@@ -23,16 +23,19 @@ const ListEmp = () => {
           <div>
           <table className='w-full mt-4' cellSpacing="0">
 <thead className='py-2'>
-<th width="100">Employee</th>
+
+<th width="100">  Employee</th>
+
 <th width="150">Phone number</th>
 <th width="200">Created at</th>
 <th width="150">Diactivate</th>
 </thead>
 <tbody>
 <tr className='py-2'>
-<td>1</td>
-<td>AW</td>
-<td>Aruba</td>
+
+<td> Diane Pretty</td>
+<td>0788738981</td>
+<td>12/03/2021</td>
 <td>297</td>
 </tr>
 <tr>
