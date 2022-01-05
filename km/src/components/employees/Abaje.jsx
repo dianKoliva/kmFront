@@ -34,40 +34,35 @@ const ListEmp = () => {
 
 <th className=' text-left' width="100">  Employee</th>
 
-<th width="150">Phone number</th>
-<th width="200">Created at</th>
-<th width="150">Diactivate</th>
-<th width="2"></th>
+<th width="150">Date</th>
+<th width="200">Attended</th>
+
 </thead>
 <tbody>
 <tr className='py-2'>
 
 <td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
+
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><input type="checkbox" name="" id="" /></td>
+
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
+
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><input type="checkbox" name="" id="" /></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><input type="checkbox" name="" id="" /></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
+
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td><input type="checkbox" name="" id="" /></td>
 </tr>
 
 
