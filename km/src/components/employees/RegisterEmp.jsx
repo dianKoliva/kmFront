@@ -5,7 +5,7 @@ const RegisterEmp = () => {
     return (
            <Dashboard>
 
-<div className=' text-sm bg-box py-10 px-10 cnt2  w-2/5 mt-24  '>
+<div className=' text-sm bg-box py-12 px-10 cnt2  w-5/12  mt-24  '>
     <h1 className='text-center mb-4 text-def font-bold'>Register new KM employee</h1>
   <form action=" 
   " className='pl-14 mt-8'>
@@ -30,7 +30,7 @@ const RegisterEmp = () => {
     </div>
 
 <div className='mt-4'>
-    <button className='bg-def text-white text-sm w-10/12 rounded-md py-1'>Save</button>
+    <button className='bg-def text-white text-sm w-10/12 rounded-md py-2'>Save</button>
 </div>
 
 
