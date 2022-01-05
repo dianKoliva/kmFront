@@ -1,5 +1,6 @@
 import React from 'react'
 import Dashboard from '../../layouts/Dashboard'
+import 'animate.css';
 const ListEmp = () => {
     return (
     <Dashboard>
@@ -7,7 +8,7 @@ const ListEmp = () => {
         <div>
               <div className="flex text-sm">
                 <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
-                <button className='bg-def px-4 absolute right-0 mr-8 h-8 text-white rounded-md'> + Add employee</button>
+                <button className=' hover:animate__animated  hover:animate__pulse hover:animate__delay-2s bg-def px-4 absolute right-0 mr-8 h-8 text-white rounded-md'> + Add employee</button>
               </div>
 
               <div className='' >

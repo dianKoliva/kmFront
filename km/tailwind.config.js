@@ -10,7 +10,7 @@ module.exports = {
     colors: {
       'def':"#591133",
       'def2':"#F8F6F7",
-      'side':"#BDA5AD",
+      'side':"#ECE5E7",
      'white': '#ffffff',
       'purple': '#3f3cbb',
       'midnight': '#121063',
