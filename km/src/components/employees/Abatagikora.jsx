@@ -42,16 +42,16 @@ const ListEmp = () => {
 <tbody>
 <tr className='py-2'>
 
-<td className=' text-left'> Diane Pretty</td>
+<td className=' text-left'> Ntakirutimana Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i className="fa cursor-pointer text-def fa-save"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td>02/04/2020</td>
+<td>365</td>
+<td><i className="fa cursor-pointer text-def fa-save"></i></td>
 
 </tr>
 <tr>

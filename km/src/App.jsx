@@ -9,7 +9,7 @@ import Login from './components/forms/Login';
 import ListEmp from "./components/employees/ListEmp";
 import ViewEmp from './components/employees/ViewEmp';
 import Abatarishyurwa  from "./components/employees/Abatarishyurwa";
-import Abatagikora from "./components/employees/Abatarishyurwa";
+import Abatagikora from "./components/employees/Abatagikora";
 
 
 function App() {
