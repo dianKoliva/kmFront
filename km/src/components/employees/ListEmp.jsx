@@ -6,10 +6,17 @@ const ListEmp = () => {
     <Dashboard>
         <div className='pl-8 pr-8 pt-6 text-sm'>
         <div>
-              <div className="flex text-sm">
+        <div className="flex text-sm">
                 <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
-                <button className=' hover:animate__animated  hover:animate__pulse hover:animate__delay-2s bg-def px-4 absolute right-0 mr-8 h-8 text-white rounded-md'> + Add employee</button>
+                <div className='absolute right-0 mr-8 flex'>
+                    <div className='border-2 mr-10 rounded-md  border-def border-solid'>
+                    <i className="fa px-2  text-lg cursor-pointer text-def fa-download"></i>
+                    </div>
+                <button className='  bg-def px-4  h-8 text-white rounded-md'> + Add employee</button>
+                </div>
+                
               </div>
+
 
               <div className='' >
                   <div className='flex mt-6 mb-2'>
