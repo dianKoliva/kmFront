@@ -30,6 +30,7 @@ const ListEmp = () => {
 <th width="150">Phone number</th>
 <th width="200">Created at</th>
 <th width="150">Diactivate</th>
+<th width="150"></th>
 </thead>
 <tbody>
 <tr className='py-2'>
