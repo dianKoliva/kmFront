@@ -21,6 +21,8 @@ function App() {
     <Route path="/" exact component={Login} />
     <Route path="/signup" exact component={ Signup } />
     <Route path="/employees" exact component={ ListEmp } />
+    <Route path="/employees/details" exact component={ ListEmp } />
+
 
     </Switch>
     </Router>
