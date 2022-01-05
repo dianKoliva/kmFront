@@ -12,7 +12,7 @@ const ListEmp = () => {
 
               <div className='' >
                   <div className='flex mt-6 mb-2'>
-                  <p className=' cursor-pointer'>Abakozi</p>
+                  <p className=' cursor-pointer hover:font-bold '>Abakozi</p>
                   <p className=' cursor-pointer ml-6'>Abatagikora</p>
                   <p className=' cursor-pointer ml-6'>Abatarishyurwa</p>
                   </div>
@@ -36,25 +36,25 @@ const ListEmp = () => {
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa text-def fa-window-close"></i></td>
+<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa text-def fa-window-close"></i></td>
+<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa text-def fa-window-close"></i></td>
+<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
 </tr>
 <tr>
 <td className=' text-left'> Diane Pretty</td>
 <td>0788738981</td>
 <td>12/03/2021</td>
-<td><i class="fa text-def fa-window-close"></i></td>
+<td><i class="fa cursor-pointer text-def fa-window-close"></i></td>
 </tr>
 
 
