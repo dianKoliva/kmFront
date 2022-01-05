@@ -21,7 +21,9 @@ const LefBar = () => {
         <li className='pt-6'>
         <i className="fa cursor-pointer text-def fa-car mr-2"></i>
             Imodoka</li>
-        <li className='pt-6'>Finances</li>
+        <li className='pt-6'>
+        <i className="fa cursor-pointer text-def fa-money mr-2"></i>
+            Finances</li>
         <li className='pt-6'>Register</li>
     </ul>
 </div>
