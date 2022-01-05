@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import App from './App'
 import { Route, Link, BrowserRouter } from 'react-router-dom'   
 import Signup from './components/forms/Signup'

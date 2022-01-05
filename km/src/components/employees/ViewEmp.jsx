@@ -2,6 +2,7 @@ import React from 'react'
 import Dashboard from '../../layouts/Dashboard'
 
 const ViewEmp = () => {
+    const days=0;
     return (
            <Dashboard>
 
@@ -20,7 +21,7 @@ const ViewEmp = () => {
     <div>
         <div className='flex mt-2'>
  <div>
-     <p>$ for 10 days</p>
+     <p>$ for {days} days</p>
      <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-8/12 ' type="text" />
  </div>
  
@@ -44,7 +45,7 @@ const ViewEmp = () => {
     </div>
 
 <div className='mt-4'>
-    <button className='bg-def text-white text-sm w-10/12 rounded-md py-1'>Save</button>
+    <button className='bg-def text-white text-sm w-10/12 rounded-md py-2'>Save</button>
 </div>
 
 
