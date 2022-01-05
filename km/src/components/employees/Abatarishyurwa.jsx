@@ -9,7 +9,7 @@ const ListEmp = () => {
               <div className="flex text-sm">
                 <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
                 <div className='absolute right-0 mr-8 flex'>
-                    <div className='border-2 mr-10 rounded-md  border-def border-solid'>
+                    <div className='border-2 mr-10 rounded-md  hover:bg-side border-def border-solid'>
                     <i className="fa px-2  text-lg cursor-pointer text-def fa-download"></i>
                     </div>
                 <button className='  bg-def px-4  h-8 text-white rounded-md'> + Add employee</button>
