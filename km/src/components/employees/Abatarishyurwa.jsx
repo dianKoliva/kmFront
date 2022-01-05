@@ -21,7 +21,7 @@ const ListEmp = () => {
                   <div className='flex mt-6 mb-2'>
                   <p className=' cursor-pointer hover:underline '>Abakozi</p>
                   <p className=' cursor-pointer ml-6 hover:underline '>Abatagikora</p>
-                  <p className=' cursor-pointer ml-6 hover:underline'>Abatarishyurwa</p>
+                  <p className=' cursor-pointer ml-6  text-def  underline '>Abatarishyurwa</p>
                   </div>
 
                   <div className='border-b-2 border-solid  border-side'></div>
