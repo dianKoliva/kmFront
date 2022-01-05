@@ -15,16 +15,19 @@ const LefBar = () => {
         <li >
         <i className="fa cursor-pointer text-def fa-home mr-2"></i>
             Home</li>
-        <li className='pt-6'> 
+        <li className='pt-8'> 
         <i className="fa cursor-pointer text-def fa-users mr-2"></i>
          Abakozi</li>
-        <li className='pt-6'>
+        <li className='pt-8'>
         <i className="fa cursor-pointer text-def fa-car mr-2"></i>
             Imodoka</li>
-        <li className='pt-6'>
+        <li className='pt-8'>
         <i className="fa cursor-pointer text-def fa-money mr-2"></i>
             Finances</li>
-        <li className='pt-6'>Register</li>
+            
+        <li className='pt-8'>
+        <i className="fa cursor-pointer text-def fa-cogs mr-2"></i>
+            Settings</li>
     </ul>
 </div>
 
