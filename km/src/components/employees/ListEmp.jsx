@@ -6,15 +6,15 @@ const ListEmp = () => {
         <div className='pl-8 pr-8 pt-6 text-sm'>
         <div>
               <div className="flex text-sm">
-                <input type="search" spellCheck="false"  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
-                <button className='bg-def px-4 absolute right-0 mr-8 py-1 text-white rounded-sm'> + Add employee</button>
+                <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
+                <button className='bg-def px-4 absolute right-0 mr-8 py-1 text-white rounded-md'> + Add employee</button>
               </div>
 
               <div className='' >
                   <div className='flex mt-6 mb-2'>
-                  <p className=' cursor-pointer hover:font-bold '>Abakozi</p>
-                  <p className=' cursor-pointer ml-6'>Abatagikora</p>
-                  <p className=' cursor-pointer ml-6'>Abatarishyurwa</p>
+                  <p className=' cursor-pointer hover:underline '>Abakozi</p>
+                  <p className=' cursor-pointer ml-6 hover:underline '>Abatagikora</p>
+                  <p className=' cursor-pointer ml-6 hover:underline'>Abatarishyurwa</p>
                   </div>
 
                   <div className='border-b-2 border-solid  border-side'></div>
