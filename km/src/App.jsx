@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Attendance from './components/employees/Attendance'
 import ViewEmp from './components/employees/ViewEmp'
 import Signup from "./components/forms/Signup"
+import Login from './components/forms/Login';
+import ListEmp from "./components/employees/ListEmp";
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
     <Router>
     <Switch>
     <Route path="/" exact component={Login} />
-        <Route path="/km/signup" exact component={ Signup } />
+    <Route path="/km/signup" exact component={ Signup } />
+    <Route path="/km/employees" exact component={ ListEmp } />
+
     </Switch>
     </Router>
     </div>
