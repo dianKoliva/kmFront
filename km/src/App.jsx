@@ -3,13 +3,14 @@ import logo from './logo.svg'
 import './App.css'
 import "./styles/index.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Attendance from './components/employees/Attendance'
+import Attendance from './components/employees/Abaje'
 import Signup from "./components/forms/Signup"
 import Login from './components/forms/Login';
 import ListEmp from "./components/employees/ListEmp";
 import ViewEmp from './components/employees/ViewEmp';
 import Abatarishyurwa  from "./components/employees/Abatarishyurwa";
 import Abatagikora from "./components/employees/Abatagikora";
+import Abaje from "./components/employees/Abaje"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <Route path="/employees/details" exact component={ ViewEmp } />
     <Route path="/employees/abatarishyurwa" exact component={ Abatarishyurwa } />
     <Route path="/employees/abatagikora" exact component={ Abatagikora } />
+    <Route path="/employees/abaje" exact component={ Abaje } />
 
     </Switch>
     </Router>
