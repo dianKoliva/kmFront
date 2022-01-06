@@ -43,9 +43,6 @@ const LefBar = () => {
             Settings
        </p>
             </div>
-       
-       
-  
 </div>
 
 
