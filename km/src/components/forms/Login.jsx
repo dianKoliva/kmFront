@@ -31,7 +31,7 @@ const Login = (props) => {
                 </div>
 
                 <div className='mt-6 text-center'>
-                    <Link to="/employees">
+                    <Link to="/abakozi">
                     <button className=' bg-def px-8 rounded-md  text-white py-2'> Let's go</button>
                     </Link>
                    
