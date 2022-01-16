@@ -25,10 +25,10 @@ function App() {
     <Route path="/signup" exact component={ Signup } />
     <Route path="/abakozi" exact component={ ListEmp } />
     <Route path="/abakozi/details" exact component={ ViewEmp } />
-    <Route path="/employees/abatarishyurwa" exact component={ Abatarishyurwa } />
-    <Route path="/employees/abatagikora" exact component={ Abatagikora } />
-    <Route path="/employees/abaje" exact component={ Abaje } />
-    <Route path="/employees/new" exact component={ Register } />
+    <Route path="/abakozi/abatarishyurwa" exact component={ Abatarishyurwa } />
+    <Route path="/abakozi/abatagikora" exact component={ Abatagikora } />
+    <Route path="/abakozi/abaje" exact component={ Abaje } />
+    <Route path="/abakozi/new" exact component={ Register } />
 
     </Switch>
     </Router>
