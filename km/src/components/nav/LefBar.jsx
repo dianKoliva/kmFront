@@ -13,14 +13,14 @@ const LefBar = () => {
 
 <div className='mt-16 '>
    
-   <div className='  hover:border-def  border-side border-l-4 borer-solid '>
-       <p className='py-1'> <i className="fa p pl-14 cursor-pointer text-def fa-home mr-3"></i>
+   <div className='  hover:border-def   border-side border-l-4 borer-solid '>
+       <p className='py-1 cursor-pointer'> <i className="fa p pl-14 cursor-pointer text-def fa-home mr-3"></i>
             Home</p>
   
    </div>
        
        <Link to="/abakozi">
-             <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
+             <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
 
        <p className='py-1'><i className="fa  pl-14 cursor-pointer text-def fa-users mr-3"></i>
          Abakozi</p>
@@ -28,33 +28,39 @@ const LefBar = () => {
          </div>
        </Link>
   
-         <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
-             <p className='py-1'>
+         <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
+             <p className='py-1 cursor-pointer'>
              <i className="fa  pl-14 cursor-pointer text-def fa-car mr-3"></i>
             Imodoka
              </p>
              </div>
       
-             <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
-       <p className='py-1'>
+             <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
+       <p className='py-1 cursor-pointer'>
        <i className="fa pl-14 cursor-pointer text-def fa-money mr-3"></i>
             Finances
        </p>
        
             </div>
-            <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
-            <p className='py-1'>
-       <i className="fa pl-14 cursor-pointer text-def fa-cogs mr-3"></i>
+            <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
+            <p className='py-1 cursor-pointer'>
+       <i className="fa pl-14  text-def fa-cogs mr-3"></i>
             Settings
+       </p>
+            </div>
+            <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
+            <p className='py-1 cursor-pointer'>
+       <i className="fa pl-14  text-def fa-sign-out mr-3"></i>
+           Logout
        </p>
             </div>
 </div>
 
 
 
-<div className='pl-16 pt-20 text-center '>
+<div className='pl-20 pt-24 text-center '>
      <div className='border-2 border-def border-solid rounded-full w-fit ty '>
-     <i className='fa text-3xl text-def fa-user px-6 py-4'></i>
+     <i className='fa text-2xl text-def fa-user px-4 py-2'></i>
      </div>
      
 </div>
