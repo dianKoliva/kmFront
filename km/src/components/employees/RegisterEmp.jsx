@@ -4,7 +4,6 @@ import Dashboard from '../../layouts/Dashboard'
 const RegisterEmp = () => {
     return (
            <Dashboard>
-
 <div className=' text-sm bg-box py-12 px-10 cnt2  w-5/12  mt-24  '>
     <h1 className='text-center mb-4 text-def font-bold'>Register new KM employee</h1>
   <form action=" 
@@ -26,7 +25,6 @@ const RegisterEmp = () => {
     <div className='mt-3 flex'>
         <input type="checkbox" className='mt-1' name="" id="" />
         <p className='ml-1'>  Agree to terms and conditions </p>
-       
     </div>
 
 <div className='mt-4'>
