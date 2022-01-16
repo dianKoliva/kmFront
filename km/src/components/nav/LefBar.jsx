@@ -44,16 +44,20 @@ const LefBar = () => {
             </div>
             <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
             <p className='py-1 cursor-pointer'>
+
        <i className="fa pl-14  text-def fa-cogs mr-3"></i>
             Settings
        </p>
             </div>
+            <Link to="/">
             <div className=' mt-6 hover:border-def  border-side border-l-4 borer-solid '>
             <p className='py-1 cursor-pointer'>
        <i className="fa pl-14  text-def fa-sign-out mr-3"></i>
            Logout
        </p>
             </div>
+            </Link>
+            
 </div>
 
 
