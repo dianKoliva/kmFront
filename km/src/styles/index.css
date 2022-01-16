@@ -37,8 +37,8 @@ tbody tr:nth-child(even) {
 background: #f5f3f4;
 }
 table td{
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 table th{
 /* font-weight: 300; */
