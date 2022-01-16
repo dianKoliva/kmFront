@@ -47,6 +47,12 @@ const LefBar = () => {
 
 
 
+<div className='pl-16 pt-20 text-center '>
+     <div className='border-2 border-def border-solid rounded-full w-fit  '>
+     <i className='fa text-3xl text-def fa-user px-6 py-4'></i>
+     </div>
+     
+</div>
         
         </div>
     )
