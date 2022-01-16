@@ -1,6 +1,7 @@
 import React from 'react'
 import Dashboard from '../../layouts/Dashboard'
 import 'animate.css';
+import { Link } from 'react-router-dom';
 const ListEmp = () => {
     return (
     <Dashboard>
@@ -20,9 +21,18 @@ const ListEmp = () => {
 
               <div className='' >
                   <div className='flex mt-6 mb-2'>
-                  <p className=' cursor-pointer hover:underline '>Abakozi</p>
-                  <p className=' cursor-pointer ml-6 hover:underline '>Abatagikora</p>
-                  <p className=' cursor-pointer ml-6 hover:underline'>Abatarishyurwa</p>
+                      <Link to="/abakozi">
+                      <p className=' cursor-pointer text-def font-bold  '>Abakozi</p>
+                      </Link>
+                
+<Link to="/abakozi/abatagikora">
+<p className=' cursor-pointer ml-6 hover:underline '>Abatagikora</p>
+</Link>
+
+<Link to="/abakozi/abatarishyurwa">
+<p className=' cursor-pointer ml-6 hover:underline'>Abatarishyurwa</p>
+</Link>                
+                  
                   </div>
 
                   <div className='border-b-2 border-solid  border-side'></div>
