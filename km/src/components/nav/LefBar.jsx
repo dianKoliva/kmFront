@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LefBar = () => {
     return (
@@ -18,11 +19,15 @@ const LefBar = () => {
   
    </div>
        
-   <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
+       <Link to="/abakozi">
+             <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
+
        <p className='py-1'><i className="fa  pl-14 cursor-pointer text-def fa-users mr-3"></i>
          Abakozi</p>
         
          </div>
+       </Link>
+  
          <div className=' mt-8 hover:border-def  border-side border-l-4 borer-solid '>
              <p className='py-1'>
              <i className="fa  pl-14 cursor-pointer text-def fa-car mr-3"></i>
