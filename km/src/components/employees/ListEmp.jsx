@@ -13,7 +13,10 @@ const ListEmp = () => {
                     <div className='border-2 mr-10 rounded-md   border-def border-solid'>
                     <i className="fa px-2  text-lg cursor-pointer text-def fa-download"></i>
                     </div>
-                <button className='  bg-def px-4  h-8 text-white rounded-md'> + Add employee</button>
+                    <Link to="/abakozi/new">
+                    <button className='  bg-def px-4  h-8 text-white rounded-md'> + Add employee</button>
+                    </Link>
+               
                 </div>
                 
               </div>
