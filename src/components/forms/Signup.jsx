@@ -36,7 +36,7 @@ const Signup = (props) => {
      password:pass,
      email:email
            }).then(resp=>{
-               console.log(resp.data);
+              
                if(resp.data.message==='Email exists'){
                    setChange(true)
                }
