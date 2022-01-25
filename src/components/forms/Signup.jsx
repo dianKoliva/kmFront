@@ -11,12 +11,26 @@ const Signup = (props) => {
     const [email,setEmail]=useState("")
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
+    const [empty,setEmpty]=useState(true)
 
   
     const  sign_Up=()=>{
  
       
-      console.log(validator.isEmail(email));
+     
+      if(!validator.isEmail(email)){
+          setNotEmail(true)
+      }
+      else if(name===""||email===""||pass===""){
+        setNotEmail(false)
+    setEmpty(true);
+      }
+      else{
+          setEmpty(false)
+          setNotEmail(false)
+
+
+      }
     //     await axios.post('/signup', {
     //  name:name,
     //  passord:pass,
@@ -31,20 +45,33 @@ const Signup = (props) => {
     return (
         <Forms>
         <div className='  bg-white  shadow-lg   rounded-lg px-14 py-6' >
-            <div className='mb-8 text-center '>
+            <div className='mb-6 text-center '>
             <p className=' text-def font-bold'> Sign up to KM</p>
             <p className=' text-xs text-def'>Best Chassis repairing company</p>
             </div>
 
-            <div className='text-xs rounded-sm bg-side '>
-                <div className='px-2 py-2'>
-                <p className='text-red'>Provide a valid email</p>
+            <div className=' mb-6'>
+                {notEmail? <div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+               
+             <p className='text-center  text-red1'>Email is invalid</p>
+                
                 </div>
+             </div>:empty? <div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+              
+                <p className='text-center  text-red1'> Fill out all fields </p>
+               
+                
+                </div>
+             </div>:null}
+            
+               
                
             </div>
            
 
-            <div className='text-sm'>
+            <div className='text-sm '>
                 <div className='inputs'>
                 <div>
                 <p>User name</p>
