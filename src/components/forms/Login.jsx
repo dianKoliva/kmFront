@@ -4,12 +4,16 @@ import { useState } from 'react/cjs/react.development'
 import Forms from '../../layouts/Forms'
 import validator from 'validator'
 import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 
 const Login = (props) => {
+    const base="http://localhost:3050/km"
     const [email,setEmail]=useState("")
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
+    const [not,setNot]=useState(false)
+    const history=useHistory();
 
     const login=async()=>{
 
@@ -28,15 +32,19 @@ const Login = (props) => {
                 password:pass,
                 email:email
                       }).then(resp=>{
-                         
-                         console.log(resp);
+                         if(resp.data.message=="invalid user"){
+
+                         }
+                        else{
+history.push("/abakozi")
+                        }
                       })
                       .catch(resp=>{
                           console.log(resp);
                       })
                  
         }
-console.log(validator.isEmail(email));
+
     }
 
     return (
@@ -58,6 +66,14 @@ console.log(validator.isEmail(email));
              <div className='px-2 py-2'>
               
                 <p className='text-center  text-red1'> Fill out all fields </p>
+               
+                
+                </div>
+             </div>:
+             not?<div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+              
+                <p className='text-center  text-red1'> User not found </p>
                
                 
                 </div>
