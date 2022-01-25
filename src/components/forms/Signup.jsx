@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Forms from '../../layouts/Forms'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
@@ -6,18 +6,24 @@ import axios from 'axios'
 const Signup = (props) => {
     const base="http://localhost:3050/km"
 
-    const  sign_Up=async(name,email,pass)=>{
-        event.preventDefault()
-        await axios.post('/signup', {
-     name:name,
-     passord:pass,
-     email:email
-           }).then(resp=>{
-               console.log(resp);
-           })
-           .catch(resp=>{
-               console.log(resp);
-           })
+    const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [pass,setPass]=useState("")
+
+
+    const  sign_Up=async(e,name,email,pass)=>{
+        e.preventDefault()
+        console.log(name,email,pass);
+    //     await axios.post('/signup', {
+    //  name:name,
+    //  passord:pass,
+    //  email:email
+    //        }).then(resp=>{
+    //            console.log(resp);
+    //        })
+    //        .catch(resp=>{
+    //            console.log(resp);
+    //        })
     }
     return (
         <Forms>
@@ -32,15 +38,27 @@ const Signup = (props) => {
                 <div className='inputs'>
                 <div>
                 <p>User name</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                <input
+                value={name}
+                onChange={
+                    e=>setName(e.target.value)}
+                 spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div>
                 <div className='mt-4'>
                 <p>Email</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                <input
+                value={email}
+                onChange={
+                    e=>setEmail(e.target.value)}
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div> 
                 <div className='mt-4'>
                 <p>Password</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                <input
+                value={pass}
+                onChange={
+                    e=>setPass(e.target.value)}
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div> 
                 </div>
 
