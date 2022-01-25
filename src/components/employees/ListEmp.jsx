@@ -4,6 +4,7 @@ import 'animate.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import moment from 'moment';
+import Diactivate from "../small/Diactivate";
 const ListEmp = () => {
     const base="http://localhost:3050/km"
     const [users,setUsers]=useState([])
@@ -21,8 +22,10 @@ const ListEmp = () => {
         })
     },[])
     return (
+        <div >
     <Dashboard>
-        <div className='pl-8 pr-8 pt-6 text-sm'>
+        <Diactivate></Diactivate>
+        <div className='pl-8 pr-8 pt-6 text-sm overflow-hidden'>
         <div>
         <div className="flex text-sm">
                 <input type="search" spellCheck="false" placeholder='search'  className=' focus:outline-none border-2 border-side rounded-md px-2 py-1  ' name="" id="" />
@@ -91,6 +94,7 @@ return(
         </div>
          
     </Dashboard>
+    </div>
     ) 
 }
 
