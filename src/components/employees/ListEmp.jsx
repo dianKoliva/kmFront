@@ -3,16 +3,18 @@ import Dashboard from '../../layouts/Dashboard'
 import 'animate.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import moment from 'moment';
 const ListEmp = () => {
     const base="http://localhost:3050/km"
-    const [users,setUsers]=useState("")
+    const [users,setUsers]=useState([])
    
 
     useEffect(async()=>{
-        axios.get(`${base}/users/`)
+        axios.get(`${base}/abakozi/`)
         .then(res=>{
-            setUsers(res.data.users);
-            console.log(users);
+            setUsers(res.data.abakozi);
+         
+           
         })
         .catch(err=>{
             console.log(err);
@@ -68,35 +70,19 @@ const ListEmp = () => {
 <th width="2"></th>
 </thead>
 <tbody>
+    {users?users.map((data,num)=>{
+return(
 <tr className='py-2'>
 
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
+<td className=' text-left'> {data.amazina}</td>
+<td>{data.nimero}</td>
+<td>{ moment(data.created_at).format('L') }</td>
 <td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
 <td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
-<tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
-</tr>
-<tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
-</tr>
-<tr>
-<td className=' text-left'> Diane Pretty</td>
-<td>0788738981</td>
-<td>12/03/2021</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
-</tr>
+)
+    }):null}
+
 
 
 </tbody>
