@@ -4,15 +4,20 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Signup = (props) => {
-    const  sign_Up=async()=>{
-        await axios.get(`${process.env.REACT_APP_baseApi}/abakozi`)
-        .then(resp=>{
+    const base="http://localhost:3050/km"
 
-            console.log(resp);
-        })
-        .catch(err=>{
-            console.log(err);
-        })
+    const  sign_Up=async(name,email,pass)=>{
+        event.preventDefault()
+        await axios.post('/signup', {
+     name:name,
+     passord:pass,
+     email:email
+           }).then(resp=>{
+               console.log(resp);
+           })
+           .catch(resp=>{
+               console.log(resp);
+           })
     }
     return (
         <Forms>
@@ -40,9 +45,12 @@ const Signup = (props) => {
                 </div>
 
                 <div className='mt-6 text-center'>
-                    <button className=' bg-def px-6 rounded-md  text-white py-2'> Let's go</button>
+                    <button
+                    onClick={()=>{sign_Up()}}
+                    className=' bg-def px-6 rounded-md  text-white py-2'> Let's go</button>
                     <Link to="/">
-                    <p className='mt-4   text-xs'>Already have an account? <span className='text-def underline font-bold cursor-pointer'>Sign in</span></p>
+                    <p
+                     className='mt-4   text-xs'>Already have an account? <span className='text-def underline font-bold cursor-pointer'>Sign in</span></p>
                     </Link>
                   
                 </div>
