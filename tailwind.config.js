@@ -8,6 +8,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      'black':"rgba(0,0,0,0.11)",
       'red1':"#ff3333",
       'def':"#591133",
       'def2':"#F8F6F7",
