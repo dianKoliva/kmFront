@@ -8,7 +8,10 @@ const Login = (props) => {
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
-    
+    const login=async()=>{
+
+    }
+
     return (
         <Forms>
         <div className='  bg-white    rounded-lg px-14 py-6' >
@@ -23,11 +26,17 @@ const Login = (props) => {
               
                 <div className='mt-4'>
                 <p>Email</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                <input
+                value={email}
+                onChange={e=>setEmail(e.target.value)}
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div> 
                 <div className='mt-4'>
                 <p>Password</p>
-                <input spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                <input
+                value={pass}
+                onChange={e=>setPass(e.target.value)}
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div> 
                 <div className='mt-6 flex text-sm'>
                     <input type="checkbox"  className='mt-1 bg-def border-8' name="" id="" />
@@ -38,7 +47,9 @@ const Login = (props) => {
 
                 <div className='mt-6 text-center'>
                     <Link to="/abakozi">
-                    <button className=' bg-def px-8 rounded-md  text-white py-2'> Let's go</button>
+                    <button
+                    onClick={()=>login}
+                    className=' bg-def px-8 rounded-md  text-white py-2'> Let's go</button>
                     </Link>
                    
                     <Link to="/signup">
