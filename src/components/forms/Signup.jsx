@@ -11,36 +11,33 @@ const Signup = (props) => {
     const [email,setEmail]=useState("")
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
-    const [empty,setEmpty]=useState(true)
+    const [empty,setEmpty]=useState(false)
 
   
-    const  sign_Up=()=>{
+    const  sign_Up=async()=>{
  
-      
-     
-      if(!validator.isEmail(email)){
-          setNotEmail(true)
-      }
-      else if(name===""||email===""||pass===""){
+       if(name===""||email===""||pass===""){
         setNotEmail(false)
     setEmpty(true);
       }
+      else if(!validator.isEmail(email)){
+        setNotEmail(true)
+    }
       else{
           setEmpty(false)
           setNotEmail(false)
-
-
+       await axios.post(`${base}/users/signup`, {
+     name:name,
+     passord:pass,
+     email:email
+           }).then(resp=>{
+               console.log(resp);
+           })
+           .catch(resp=>{
+               console.log(resp);
+           })
       }
-    //     await axios.post('/signup', {
-    //  name:name,
-    //  passord:pass,
-    //  email:email
-    //        }).then(resp=>{
-    //            console.log(resp);
-    //        })
-    //        .catch(resp=>{
-    //            console.log(resp);
-    //        })
+ 
     }
     return (
         <Forms>
