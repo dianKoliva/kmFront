@@ -11,7 +11,7 @@ const RegisterEmp = () => {
     const[salary,setSalary]=useState()
     const [empty,setEmpty]=useState(false)
     const base="http://localhost:3050/km"
-    const [already,serAlready]=useState(false)
+    const [already,setAlready]=useState(false)
     var history=useHistory()
 
     const current = new Date();
@@ -32,10 +32,12 @@ await axios.post(`${base}/abakozi/new`, {
           }).then(resp=>{
             
              if(resp.data.message==="Employee Created"){
+                setAlready(false)
                 history.push("/abakozi")
+                
              }
              else {
-                 
+                 setAlready(true)
              }
           })
           .catch(resp=>{
@@ -50,7 +52,8 @@ await axios.post(`${base}/abakozi/new`, {
 <div className=' text-sm bg-box py-12 px-10 cnt2  w-5/12  mt-24  '>
     <h1 className='text-center mb-4 text-def font-bold'>Register new KM employee</h1>
     
-    {empty?<p className=' text-red1 text-center text-sm'>Hose ugomba kuzuzamo ibisabwa</p>:null}
+    {empty?<p className=' text-red1 text-center text-sm'>Hose ugomba kuzuzamo ibisabwa</p>:already?<p className=' text-red1 text-center text-sm'>Employee is already in the system</p>:null}
+    
   <div action=" 
   " className='pl-14 mt-6'>
  <div>
