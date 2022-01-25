@@ -7,19 +7,29 @@ const RegisterEmp = () => {
     const [names,setName]=useState("")
     const [tel,setTel]=useState("")
     const[salary,setSalary]=useState("")
+    const [empty,setEmpty]=useState(false)
 
-    const save= async()=>{
-        console.log(names,tel,salary);
+    const save= ()=>{
+        if(names===""||tel===""||salary===""){
+setEmpty(true)
+        }else{
+setEmpty(false)
+
+        }
+        
     }
 
     return (
            <Dashboard>
 <div className=' text-sm bg-box py-12 px-10 cnt2  w-5/12  mt-24  '>
     <h1 className='text-center mb-4 text-def font-bold'>Register new KM employee</h1>
+    
+    {empty?<p className=' text-red1 text-center text-sm'>Hose ugomba kuzuzamo ibisabwa</p>:null}
   <div action=" 
-  " className='pl-14 mt-8'>
+  " className='pl-14 mt-6'>
  <div>
-    <p>Amazina yombi</p>
+     
+     <p>Amazina yombi</p>
     <input 
     
     value={names}
