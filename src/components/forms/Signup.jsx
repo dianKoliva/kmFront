@@ -12,6 +12,7 @@ const Signup = (props) => {
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
+    const [change,setChange]=useState(false)
 
   
     const  sign_Up=async()=>{
@@ -28,10 +29,10 @@ const Signup = (props) => {
           setNotEmail(false)
        await axios.post(`${base}/users/signup`, {
      name:name,
-     passord:pass,
+     password:pass,
      email:email
            }).then(resp=>{
-               console.log(resp);
+               console.log(resp.data);
            })
            .catch(resp=>{
                console.log(resp);
