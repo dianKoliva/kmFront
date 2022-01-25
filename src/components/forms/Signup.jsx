@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Forms from '../../layouts/Forms'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import validator from 'validator'
 
 const Signup = (props) => {
     const base="http://localhost:3050/km"
@@ -9,11 +10,13 @@ const Signup = (props) => {
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [pass,setPass]=useState("")
+    const [notEmail,setNotEmail]=useState(false);
 
-
-    const  sign_Up=async(e,name,email,pass)=>{
-        e.preventDefault()
-        console.log(name,email,pass);
+  
+    const  sign_Up=()=>{
+ 
+      
+      console.log(validator.isEmail(email));
     //     await axios.post('/signup', {
     //  name:name,
     //  passord:pass,
@@ -32,9 +35,16 @@ const Signup = (props) => {
             <p className=' text-def font-bold'> Sign up to KM</p>
             <p className=' text-xs text-def'>Best Chassis repairing company</p>
             </div>
+
+            <div className='text-xs rounded-sm bg-side '>
+                <div className='px-2 py-2'>
+                <p className='text-red'>Provide a valid email</p>
+                </div>
+               
+            </div>
            
 
-            <form action="" className='text-sm'>
+            <div className='text-sm'>
                 <div className='inputs'>
                 <div>
                 <p>User name</p>
@@ -74,7 +84,7 @@ const Signup = (props) => {
                 </div>
                
                
-            </form>
+            </div>
            
         </div>
         </Forms>
