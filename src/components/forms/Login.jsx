@@ -2,25 +2,71 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react/cjs/react.development'
 import Forms from '../../layouts/Forms'
+import validator from 'validator'
+import axios from 'axios'
 
 const Login = (props) => {
     const [email,setEmail]=useState("")
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
+
     const login=async()=>{
 
+        if(email===""||pass===""){
+            setNotEmail(false)
+        setEmpty(true);
+          }
+          else if(!validator.isEmail(email)){
+            setNotEmail(true)
+        }
+        else{
+            setEmpty(false)
+            setNotEmail(false)
+
+            await axios.post(`${base}/users/login`, {
+                password:pass,
+                email:email
+                      }).then(resp=>{
+                         
+                         console.log(resp);
+                      })
+                      .catch(resp=>{
+                          console.log(resp);
+                      })
+                 
+        }
+console.log(validator.isEmail(email));
     }
 
     return (
         <Forms>
         <div className='  bg-white    rounded-lg px-14 py-6' >
-            <div className='mb-8 text-center '>
+            <div className='mb-6 text-center '>
             <p className=' text-def font-bold'> Sign in to KM</p>
             <p className=' text-xs text-def'>Best Chassis repairing company</p>
             </div>
            
-
+            <div className=' mb-6'>
+                {notEmail? <div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+               
+             <p className='text-center  text-red1'>Email is invalid</p>
+                
+                </div>
+             </div>:empty? <div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+              
+                <p className='text-center  text-red1'> Fill out all fields </p>
+               
+                
+                </div>
+             </div>:
+             null}
+            
+               
+               
+            </div>
             <div action="" className='text-sm'>
                 <div className='inputs'>
               
@@ -46,11 +92,11 @@ const Login = (props) => {
                 </div>
 
                 <div className='mt-6 text-center'>
-                    <Link to="/abakozi">
+                    {/* <Link to="/abakozi"> */}
                     <button
-                    onClick={()=>login}
+                    onClick={login}
                     className=' bg-def px-8 rounded-md  text-white py-2'> Let's go</button>
-                    </Link>
+                    {/* </Link> */}
                    
                     <Link to="/signup">
                     <p className='mt-4   text-xs'>Have no account yet? <span className='text-def underline font-bold cursor-pointer'>Sign up</span></p>
