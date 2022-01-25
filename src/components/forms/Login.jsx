@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react/cjs/react.development'
 import Forms from '../../layouts/Forms'
 
 const Login = (props) => {
+    const [email,setEmail]=useState("")
+    const [pass,setPass]=useState("")
+    const [notEmail,setNotEmail]=useState(false);
+    const [empty,setEmpty]=useState(false)
+    
     return (
         <Forms>
         <div className='  bg-white    rounded-lg px-14 py-6' >
@@ -12,7 +18,7 @@ const Login = (props) => {
             </div>
            
 
-            <form action="" className='text-sm'>
+            <div action="" className='text-sm'>
                 <div className='inputs'>
               
                 <div className='mt-4'>
@@ -41,7 +47,7 @@ const Login = (props) => {
                 </div>
                
                
-            </form>
+            </div>
            
         </div>
         </Forms>
