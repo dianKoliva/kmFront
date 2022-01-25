@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React from 'react'
 import { useState } from 'react/cjs/react.development'
 import Dashboard from '../../layouts/Dashboard'
@@ -9,12 +10,27 @@ const RegisterEmp = () => {
     const[salary,setSalary]=useState("")
     const [empty,setEmpty]=useState(false)
 
-    const save= ()=>{
+    const current = new Date();
+    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+
+    const save=async ()=>{
         if(names===""||tel===""||salary===""){
+            console.log(date);
 setEmpty(true)
         }else{
 setEmpty(false)
 
+await axios.post(`${base}/abakozi/new`, {
+    amazina:names,
+                        nimero:tel,
+                        umushahara:salary,
+                        created_at:date
+          }).then(resp=>{
+             console.log(resp);
+          })
+          .catch(resp=>{
+              console.log(resp);
+          })
         }
         
     }
