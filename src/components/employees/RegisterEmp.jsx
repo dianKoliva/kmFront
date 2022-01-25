@@ -8,7 +8,7 @@ const RegisterEmp = () => {
 
     const [names,setName]=useState("")
     const [tel,setTel]=useState("")
-    const[salary,setSalary]=useState()
+    const[salary,setSalary]=useState(0)
     const [empty,setEmpty]=useState(false)
     const base="http://localhost:3050/km"
     const [already,setAlready]=useState(false)
