@@ -1,8 +1,19 @@
 import React from 'react'
 import Forms from '../../layouts/Forms'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Signup = (props) => {
+    const  sign_Up=async()=>{
+        await axios.get(`${process.env.REACT_APP_baseApi}/abakozi`)
+        .then(resp=>{
+
+            console.log(resp);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+    }
     return (
         <Forms>
         <div className='  bg-white  shadow-lg   rounded-lg px-14 py-6' >
