@@ -3,9 +3,12 @@ import Forms from '../../layouts/Forms'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import validator from 'validator'
+import { useHistory } from 'react-router-dom'
 
 const Signup = (props) => {
     const base="http://localhost:3050/km"
+
+    const history=useHistory();
 
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
@@ -13,6 +16,7 @@ const Signup = (props) => {
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
     const [change,setChange]=useState(false)
+
 
   
     const  sign_Up=async()=>{
@@ -33,6 +37,13 @@ const Signup = (props) => {
      email:email
            }).then(resp=>{
                console.log(resp.data);
+               if(resp.data.message==='Email exists'){
+                   setChange(true)
+               }
+               else{
+                setChange(false)
+                history.push("/")
+               }
            })
            .catch(resp=>{
                console.log(resp);
@@ -62,7 +73,16 @@ const Signup = (props) => {
                
                 
                 </div>
-             </div>:null}
+             </div>:
+             change?<div className='text-xs rounded-sm   bg-side'>
+             <div className='px-2 py-2'>
+              
+                <p className='text-center  text-red1'> Email already taken </p>
+               
+                
+                </div>
+             </div>:
+             null}
             
                
                
@@ -77,7 +97,7 @@ const Signup = (props) => {
                 value={name}
                 onChange={
                     e=>setName(e.target.value)}
-                 spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                 spellCheck="false" className='px-1 py-2 h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
                 </div>
                 <div className='mt-4'>
                 <p>Email</p>
@@ -85,7 +105,7 @@ const Signup = (props) => {
                 value={email}
                 onChange={
                     e=>setEmail(e.target.value)}
-                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white px-1 py-2' type="text" name="" id="" />
                 </div> 
                 <div className='mt-4'>
                 <p>Password</p>
@@ -93,7 +113,7 @@ const Signup = (props) => {
                 value={pass}
                 onChange={
                     e=>setPass(e.target.value)}
-                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white' type="text" name="" id="" />
+                spellCheck="false" className=' h-4 focus:outline-none line text-sm w-full bg-white ' type="password"  name="" id="" />
                 </div> 
                 </div>
 
