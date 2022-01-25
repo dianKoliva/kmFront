@@ -9,13 +9,14 @@ const RegisterEmp = () => {
     const [tel,setTel]=useState("")
     const[salary,setSalary]=useState("")
     const [empty,setEmpty]=useState(false)
+    const base="http://localhost:3050/km"
 
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
     const save=async ()=>{
         if(names===""||tel===""||salary===""){
-            console.log(date);
+            
 setEmpty(true)
         }else{
 setEmpty(false)
