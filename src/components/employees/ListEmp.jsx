@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from "react";
 import Dashboard from '../../layouts/Dashboard'
 import 'animate.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 const ListEmp = () => {
+    const base="http://localhost:3050/km"
+    const [users,setUsers]=useState("")
+   
+
+    useEffect(async()=>{
+        axios.get(`${base}/users/`)
+        .then(res=>{
+            setUsers(res.data.users);
+            console.log(users);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+    },[])
     return (
     <Dashboard>
         <div className='pl-8 pr-8 pt-6 text-sm'>
