@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { useState } from 'react/cjs/react.development'
 import Dashboard from '../../layouts/Dashboard'
 
@@ -7,9 +8,10 @@ const RegisterEmp = () => {
 
     const [names,setName]=useState("")
     const [tel,setTel]=useState("")
-    const[salary,setSalary]=useState("")
+    const[salary,setSalary]=useState()
     const [empty,setEmpty]=useState(false)
     const base="http://localhost:3050/km"
+    var history=useHistory()
 
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
@@ -25,9 +27,14 @@ await axios.post(`${base}/abakozi/new`, {
     amazina:names,
                         nimero:tel,
                         umushahara:salary,
-                        created_at:date
+                        
           }).then(resp=>{
              console.log(resp);
+             if(resp.data.message==="'Employee Created'"){
+
+                history.push("/abakozi")
+
+             }
           })
           .catch(resp=>{
               console.log(resp);
