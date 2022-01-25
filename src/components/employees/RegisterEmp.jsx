@@ -11,6 +11,7 @@ const RegisterEmp = () => {
     const[salary,setSalary]=useState()
     const [empty,setEmpty]=useState(false)
     const base="http://localhost:3050/km"
+    const [already,serAlready]=useState(false)
     var history=useHistory()
 
     const current = new Date();
@@ -29,11 +30,12 @@ await axios.post(`${base}/abakozi/new`, {
                         umushahara:salary,
                         
           }).then(resp=>{
-             console.log(resp);
-             if(resp.data.message==="'Employee Created'"){
-
+            
+             if(resp.data.message==="Employee Created"){
                 history.push("/abakozi")
-
+             }
+             else {
+                 
              }
           })
           .catch(resp=>{
