@@ -26,7 +26,9 @@ const Signup = (props) => {
     setEmpty(true);
       }
       else if(!validator.isEmail(email)){
+      
         setNotEmail(true)
+        setEmpty(false);
     }
       else{
           setEmpty(false)

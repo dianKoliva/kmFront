@@ -12,17 +12,19 @@ const Login = (props) => {
     const [pass,setPass]=useState("")
     const [notEmail,setNotEmail]=useState(false);
     const [empty,setEmpty]=useState(false)
-    const [not,setNot]=useState(false)
+    const [notF,setNot]=useState(false)
     const history=useHistory();
 
     const login=async()=>{
 
         if(email===""||pass===""){
             setNotEmail(false)
-        setEmpty(true);
+            setEmpty(true);
           }
           else if(!validator.isEmail(email)){
+            console.log(email);
             setNotEmail(true)
+            setEmpty(false);
         }
         else{
             setEmpty(false)
@@ -33,7 +35,8 @@ const Login = (props) => {
                 email:email
                       }).then(resp=>{
                          if(resp.data.message=="invalid user"){
-
+setNot(true)
+console.log(notF);
                          }
                         else{
 history.push("/abakozi")
@@ -70,7 +73,7 @@ history.push("/abakozi")
                 
                 </div>
              </div>:
-             not?<div className='text-xs rounded-sm   bg-side'>
+             notF?<div className='text-xs rounded-sm   bg-side'>
              <div className='px-2 py-2'>
               
                 <p className='text-center  text-red1'> User not found </p>
