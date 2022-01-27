@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import moment from 'moment';
 import Diactivate from "../small/Diactivate";
+import { Context } from '../../Context';
 const ListEmp = () => {
     const base="http://localhost:3050/km"
     const [users,setUsers]=useState([])
+    const {showDeactivate,setShowDeactivate}=useContext(Context)
+    const {employee_to_diactivate,setEmployee_to_diactivate}=useContext(Context)
+    const {confirm_deactivate,setConfirm_deactivate}=useContext(Context)
    
 
     useEffect(async()=>{
@@ -24,7 +28,8 @@ const ListEmp = () => {
     return (
         <div >
     <Dashboard>
-        <Diactivate></Diactivate>
+        {showDeactivate?<Diactivate></Diactivate>:null}
+        
         <div className='pl-8 pr-8 pt-6 text-sm overflow-hidden'>
         <div>
         <div className="flex text-sm">
@@ -75,12 +80,12 @@ const ListEmp = () => {
 <tbody>
     {users?users.map((data,num)=>{
 return(
-<tr className='py-2'>
+<tr className='py-2' key={num}>
 
 <td className=' text-left'> {data.amazina}</td>
 <td>{data.nimero}</td>
 <td>{ moment(data.created_at).format('L') }</td>
-<td><i className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i onClick={()=>{setShowDeactivate(true);setEmployee_to_diactivate(data)}} className="fa cursor-pointer text-def fa-window-close"></i></td>
 <td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 )
