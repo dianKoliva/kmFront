@@ -24,7 +24,17 @@ function App() {
   const [details,setDetails]=useState({})
   const [users,setUsers]=useState([])
   const base="http://localhost:3050/km"
+  const [emp_salary,setEmp_salary]=useState({});
 
+  const sal=async()=>{
+    
+    await axios.post(`${base}/salary/new`, {
+      umukozi_id:emp_salary._id
+    }).then()
+    .catch(err=>{
+      console.log(err);
+    })
+  }
 
   //functions
   
@@ -58,7 +68,10 @@ function App() {
       details,setDetails,
       employee_to_diactivate,setEmployee_to_diactivate,
       users,setUsers,
-      fetch
+      fetch,
+      emp_salary,setEmp_salary,
+      sal
+
 
 
       }}>

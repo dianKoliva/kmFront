@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { useState } from 'react/cjs/react.development'
+import { useContext, useState } from 'react/cjs/react.development'
+import { Context } from '../../Context'
 import Dashboard from '../../layouts/Dashboard'
 
 const RegisterEmp = () => {
@@ -12,6 +13,8 @@ const RegisterEmp = () => {
     const [empty,setEmpty]=useState(false)
     const base="http://localhost:3050/km"
     const [already,setAlready]=useState(false)
+    const {emp_salary,setEmp_salary}=useContext(Context)
+    const {sal}=useContext(Context)
     var history=useHistory()
 
     const current = new Date();
@@ -33,8 +36,11 @@ await axios.post(`${base}/abakozi/new`, {
             
              if(resp.data.message==="Employee Created"){
                 setAlready(false)
+                setEmp_salary(resp.data.user)
                 history.push("/abakozi")
-                
+
+                sal()
+
              }
              else {
                  setAlready(true)
