@@ -19,13 +19,12 @@ function App() {
   const [count, setCount] = useState(0)
   const [showDeactivate,setShowDeactivate]=useState(false)
   const [employee_to_diactivate,setEmployee_to_diactivate]=useState({})
-  const [confirm_deactivate,setConfirm_deactivate]=useState(false)
 
   return (
     <Context.Provider value={{
       showDeactivate,setShowDeactivate,
       employee_to_diactivate,setEmployee_to_diactivate,
-      confirm_deactivate,setConfirm_deactivate
+   
       }}>
     <div className="App">
 
