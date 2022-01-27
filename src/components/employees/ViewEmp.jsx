@@ -1,8 +1,16 @@
 import React from 'react'
+import { useContext, useState } from 'react/cjs/react.development';
+import { Context } from '../../Context';
 import Dashboard from '../../layouts/Dashboard'
 
 const ViewEmp = () => {
     const days=0;
+    const {details,setDetails}=useContext(Context)
+    const [amazina,setAmazina]=useState(details.amazina)
+    const [nimero,setNimero]=useState(details.nimero);
+    const [umushahara,setUmushahara]=useState(details.umushahara)
+
+   
     return (
            <Dashboard>
 
@@ -12,11 +20,20 @@ const ViewEmp = () => {
   " className='pl-14 mt-2'>
  <div>
     <p>Amazina yombi</p>
-    <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
+    <input
+    
+    value={amazina}
+    onChange={(e)=>setAmazina(e.target.value)}
+ 
+    
+
+    spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
  <div className='mt-2'>
     <p>Umushahara</p>
-    <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
+    <input value={umushahara}
+    onChange={(e)=>{setUmushahara(e.target.value)}}
+    spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
     <div>
         <div className='flex mt-2'>
@@ -45,7 +62,7 @@ const ViewEmp = () => {
     </div>
 
 <div className='mt-4'>
-    <button className='bg-def text-white text-sm w-10/12 rounded-md py-2'>Save</button>
+    <button className='bg-def text-white text-sm w-10/12 rounded-md py-2'>Update</button>
 </div>
 
 

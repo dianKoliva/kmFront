@@ -2,28 +2,29 @@ import React, { useContext, useEffect, useState } from "react";
 import Dashboard from '../../layouts/Dashboard'
 import 'animate.css';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
 import moment from 'moment';
 import Diactivate from "../small/Diactivate";
 import { Context } from '../../Context';
+import { useHistory } from "react-router-dom";
 const ListEmp = () => {
     const base="http://localhost:3050/km"
-    const [users,setUsers]=useState([])
+    
     const {showDeactivate,setShowDeactivate}=useContext(Context)
     const {employee_to_diactivate,setEmployee_to_diactivate}=useContext(Context)
     const {confirm_deactivate,setConfirm_deactivate}=useContext(Context)
+    const {details,setDetails,}=useContext(Context)
+    const{users,setUsers}=useContext(Context)
+    const {fetch}=useContext(Context)
+    const history=useHistory()
    
+   const see=(dat)=>{
+    setDetails(dat);
+    history.push("/abakozi/view")
+   }
 
-    useEffect(async()=>{
-        axios.get(`${base}/abakozi/`)
-        .then(res=>{
-            setUsers(res.data.abakozi);
-         
-           
-        })
-        .catch(err=>{
-            console.log(err);
-        })
+    useEffect(()=>{
+        fetch()
     },[])
     return (
         <div >
@@ -78,15 +79,15 @@ const ListEmp = () => {
 <th width="2"></th>
 </thead>
 <tbody>
-    {users?users.map((data,num)=>{
+    {users?users.map((dat,num)=>{
 return(
 <tr className='py-2' key={num}>
 
-<td className=' text-left'> {data.amazina}</td>
-<td>{data.nimero}</td>
-<td>{ moment(data.created_at).format('L') }</td>
-<td><i onClick={()=>{setShowDeactivate(true);setEmployee_to_diactivate(data)}} className="fa cursor-pointer text-def fa-window-close"></i></td>
-<td><i className="fa cursor-pointer text-def fa-chevron-right"></i></td>
+<td className=' text-left'> {dat.amazina}</td>
+<td>{dat.nimero}</td>
+<td>{ moment(dat.created_at).format('L') }</td>
+<td><i onClick={()=>{setShowDeactivate(true);setEmployee_to_diactivate(dat)}} className="fa cursor-pointer text-def fa-window-close"></i></td>
+<td><i onClick={()=>see(dat)} className="fa cursor-pointer text-def fa-chevron-right"></i></td>
 </tr>
 )
     }):null}

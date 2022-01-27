@@ -7,14 +7,15 @@ const Diactivate = () => {
   const base="http://localhost:3050/km"
     const [close,setClose]=useState(false)
     const {showDeactivate,setShowDeactivate}=useContext(Context)
-    
     const {employee_to_diactivate,setEmployee_to_diactivate}=useContext(Context)
+    const {fetch}=useContext(Context)
     
 
     const diactivate=async()=>{
 
       axios.put(`${base}/abakozi/disable/${employee_to_diactivate._id}`)
       .then((resp)=>{
+        fetch()
         console.log(resp);
       })
       .catch((err)=>{
@@ -34,7 +35,7 @@ const Diactivate = () => {
 <p className='pt-2 '>
 Ntabwo uyu mukozi agikora muri company yacu
 </p>
-<button onClick={()=>diactivate()} className='bg-def  text-white px-5 py-1 rounded-sm  cursor-pointer mt-4'>Yes</button>
+<button onClick={()=>{diactivate();setShowDeactivate(false)}} className='bg-def  text-white px-5 py-1 rounded-sm  cursor-pointer mt-4'>Yes</button>
     
 
  </div>
