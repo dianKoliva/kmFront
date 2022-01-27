@@ -12,11 +12,14 @@ import Abatagikora from "./components/employees/Abatagikora";
 import Abaje from "./components/employees/Abaje"
 import Register from  "./components/employees/RegisterEmp"
 
+import Context from "./Context"
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <Context.Provider value={{}}>
     <div className="App">
 
     <Router>
@@ -33,6 +36,7 @@ function App() {
     </Switch>
     </Router>
     </div>
+    </Context.Provider>
   )
 }
 
