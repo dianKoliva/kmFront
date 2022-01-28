@@ -29,12 +29,22 @@ const ViewEmp = () => {
 
     spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
+    
+    <div className='mt-2'>
+    <p>Nimero ya tel</p>
+    <input value={nimero}
+    onChange={(e)=>{setNimero(e.target.value)}}
+    spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
+    </div>
+
+
  <div className='mt-2'>
     <p>Umushahara</p>
     <input value={umushahara}
     onChange={(e)=>{setUmushahara(e.target.value)}}
     spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
     </div>
+    
     <div>
         <div className='flex mt-2'>
  <div>
@@ -48,10 +58,7 @@ const ViewEmp = () => {
  </div>
         </div>
     </div>
- <div className='mt-2'>
-    <p>Total Salary</p>
-    <input spellCheck="false" className=' px-2 py-1   mt-1 focus:outline-none border rounded-md w-10/12 ' type="text" />
-    </div>
+
 
 
  
