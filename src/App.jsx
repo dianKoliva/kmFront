@@ -30,7 +30,9 @@ function App() {
     
     await axios.post(`${base}/salary/new`, {
       umukozi_id:emp_salary._id
-    }).then()
+    }).then((r)=>{
+      console.log(r);
+    })
     .catch(err=>{
       console.log(err);
     })
