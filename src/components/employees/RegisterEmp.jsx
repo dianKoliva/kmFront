@@ -38,7 +38,6 @@ await axios.post(`${base}/abakozi/new`, {
                 setAlready(false)
                 setEmp_salary(resp.data.user)
                 history.push("/abakozi")
-
                 sal()
 
              }
